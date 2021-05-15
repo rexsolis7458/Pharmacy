@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    th,
+    tr,
+    td {
+        padding: 10px;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy</title>
+</head>
+
+<body>
+    <div style="margin: 10px 20px; padding: 20px; width: 300px; float: left;">
+
+        <h3 id="title">Pharmacy<br><br>Register Items</h3>
+        <p id="textDescription">Register medicines</p>
+
+        <p>Brand Name: <input id="textInputBrandName" type="text" style="width: 120px; margin:5px;"
+                placeholder="Enter Brand Name">
+        </p>
+
+        <p id="genericName">Generic Name: <input id="textInputGenericName" type="text" style="width: 120px; margin:5px;"
+                placeholder="Enter Generic Name">
+        </p>
+
+        <p>Stock: <input id="textInputStock" type="number" style="width: 120px; margin:5px;" min="1"
+                placeholder="Enter Stock">
+        </p>
+
+        <p id="price">Price: <input id="textInputPrice" type="number" style="width: 120px; margin:5px; " min="1"
+                placeholder="Enter Price">
+        </p>
+    </div>
+    <div style="margin-left: 400px;">
+        <br>
+        <center>
+            <table id="tableP">
+                <tr>
+                    <th>
+                        Brand Name
+                    </th>
+                    <th>
+                        Generic Name
+                    </th>
+                    <th>
+                        Stock
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                </tr>
+            </table>
+            <br>
+            <br>
+
+        </center>
+        </br>
+    </div>
+    <div style="margin: 10px 20px; padding: 20px; width: 300px; float: center;">
+        <p><button id="submitChange" onclick="submitChange()"
+                style="width: 100px; height: 40px; display: none;">Submit</button></p>
+        <p><button id="registerButton" onclick="registerItems()"
+                style="width: 100px; height: 40px; display: block;">Register Item</button></p>
+
+        <p><button id="submitBuyButton" onclick="submitBuy()"
+                style="width: 100px; height: 40px; display: none;">Submit</button></p>
+        <br>
+        <h4>Menu:</h4>
+        <p><button id="register" onclick="register()"
+                style="width: 100px; height: 40px; display: none;">Register</button></p>
+
+        <p><button id="buyButton" onclick="buy()" style="width: 100px; height: 40px; display: block;">Buy</button></p>
+        <p><button id="changeQuantityButton" onclick="changeQuantity()"
+                style="width: 100px; height: 40px; display: block;">Add Quantity</button></p>
+        <br>
+    </div>
+</body>
+<script src="index.js" type="text/javascript"> //no content </script>
+
+</html>
